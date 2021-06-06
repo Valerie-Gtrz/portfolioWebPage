@@ -6,6 +6,7 @@ background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(10
 background-blend-mode: screen, overlay, hard-light, normal;
 
 }
+
 header {    /*header background image*/
   background-image: url(images/gradient-header.png);
   padding:10px;   /*padding*/
