@@ -1,36 +1,62 @@
-
 body {
-  
-
-background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #FF7A00 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-background-blend-mode: screen, overlay, hard-light, normal;
-
+  background: linear-gradient(45deg, #000850 0%, #000320 100%),
+    radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
+    linear-gradient(225deg, #ff7a00 0%, #000000 100%),
+    linear-gradient(
+      135deg,
+      #cdffeb 10%,
+      #cdffeb 35%,
+      #009f9d 35%,
+      #009f9d 60%,
+      #07456f 60%,
+      #07456f 67%,
+      #0f0a3c 67%,
+      #0f0a3c 100%
+    );
+  background-size: 100%;
+  background-blend-mode: screen, overlay, hard-light, normal;
 }
-header {    /*header background image*/
+header {
+  /*header background image*/
   background-image: url(images/gradient-header.png);
-  padding:10px;   /*padding*/
+  padding: 10px; /*padding*/
+  background-size: 100%;
 }
 
-
-h1,h2,h3 {
-font-family: 'Trebuchet MS';
-text-align: center;
-color:whitesmoke;
-
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS";
+  text-align: center;
+  color: whitesmoke;
 }
-img {     /*created a border for my image*/
-  
+
+a {
+  /*anchor styling*/
+  font-family: "Trebuchet MS";
+  color: gold;
+}
+a:visited {
+  color: rgb(63, 230, 245);
+}
+a:hover {
+  color: rgb(0, 250, 0);
+}
+
+img {
+  /*created a border for my image*/
+
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 5px;
   display: block;
 }
 
-img.resize {     /*made image smaller*/
-    width: 300px; 
-    height: 337px;  /*--height--*/
+img.resize {
+  /*made image smaller*/
+  width: 300px;
+  height: 337px; /*--height--*/
 }
-
 
 .filter {
   position: relative;
@@ -50,11 +76,10 @@ img.resize {     /*made image smaller*/
   background: rgba(127, 187, 227, 0.2);
 }
 
-
 hr {
   display: block;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;     /*--margins--*/
+  margin-bottom: 0.5em; /*--margins--*/
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
@@ -64,70 +89,69 @@ hr {
 }
 
 p {
-font-family: 'Trebuchet MS';
-text-align: left;
-color:whitesmoke;
-
+  font-family: "Trebuchet MS";
+  text-align: left;
+  color: whitesmoke;
 }
 
-a {   /*anchor styling*/
-  font-family: 'Trebuchet MS';
-}
-a:link    { color: gold; }
-a:visited { color: rgb(0, 217, 255); }
-a:hover   { color: rgb(0, 250, 0); }
-a:active  { color: pink; }
-
-
-
-.list-inside {  /*class to center lists*/
+.list-inside {
+  /*class to center lists*/
   list-style-position: inside;
 }
 
-.align-center{ 
+.align-center {
   text-align: center;
-
 }
 
-ul{      /*unordered list styling*/
+ul {
+  /*unordered list styling*/
   display: inline-block;
   text-align: left;
 }
 
-ol {          /*ordered list styling*/
-display: inline-block;
-text-align: left; 
+ol {
+  /*ordered list styling*/
+  display: inline-block;
+  text-align: left;
 }
 
-.text-style {  /*class for text styling*/
-font-family: 'Trebuchet MS';     /*--font-family--*/ 
-color: aliceblue;           /*--color--*/
+.text-style {
+  /*class for text styling*/
+  font-family: "Trebuchet MS"; /*--font-family--*/
+  color: aliceblue; /*--color--*/
 }
 
-.center {    /*class to center image*/
-  display: block;
+.center {
+  /*class to center image*/
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  padding: 10px;    /*padding*/
+  padding: 10px; /*padding*/
 }
 
-.left {   
-  text-align: left;   /*text-align left*/
+.left {
+  text-align: left; /*text-align left*/
 }
 
-
-.container {  /*class to size containers*/
-  height:;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-
+.container {
+  /*class to size containers*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
+.container-two {
+  margin-left: 34%;
+  margin-right: 34%;
+}
 
-footer {    /*footer styling*/
-  height: 80px;        /*--height--*/
-  background-color:#084E59;
-  font-size: 25px;   /*--font-size--*/
+footer {
+  /*footer styling*/
+  height: 80px; /*--height--*/
+  background-color: #084e59;
+  background-size: 100%;
+  font-size: 25px; /*--font-size--*/
 }
