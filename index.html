@@ -1,79 +1,180 @@
-<!DOCTYPE html>  <!--doctype-->
-<html>   <!--html-->
-  <head>       <!--head-->
-    <meta charset="utf-8"> <!--meta-->
-    <meta name="viewport" content="width=device-width">
-    <title>Valerie Gutierrez</title>   <!--title of site-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> <!--noramlize-->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+body {
+  background: linear-gradient(45deg, #000850 0%, #000320 100%),
+    radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
+    linear-gradient(225deg, #ff7a00 0%, #000000 100%),
+    linear-gradient(
+      135deg,
+      #cdffeb 10%,
+      #cdffeb 35%,
+      #009f9d 35%,
+      #009f9d 60%,
+      #07456f 60%,
+      #07456f 67%,
+      #0f0a3c 67%,
+      #0f0a3c 100%
+    );
+  background-size: 100%;
+  background-blend-mode: screen, overlay, hard-light, normal;
+}
+header {
+  /*header background image*/
+  background-image: url(images/gradient-header.png);
+  padding: 10px; /*padding*/
+  background-size: 100%;
+}
 
-  </head>
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS";
+  text-align: center;
+  color: whitesmoke;
+}
 
-  <header>
-    <h1>Valerie Gutierrez</h1>   <!--h1-->
-    <p class="align-center">Software Engineer</p>  <!--center align paragraph in header-->
-    </header>
+a {
+  /*anchor styling*/
+  font-family: "Trebuchet MS";
+  color: gold;
+}
+a:visited {
+  color: rgb(63, 230, 245);
+}
+a:hover {
+  color: rgb(0, 250, 0);
+}
 
+img {
+  /*created a border for my image*/
 
-  <body> <!--body-->
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  display: block;
+}
 
-    <main>   <!--main-->
+img.resize {
+  /*made image smaller*/
+  width: 300px;
+  height: 337px; /*--height--*/
+}
 
-<br>
+.filter {
+  position: relative;
+  -webkit-filter: contrast(120%) saturate(125%);
+  filter: contrast(120%) saturate(125%);
+}
+.filter::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  background: rgba(127, 187, 227, 0.2);
+}
 
-     <div><img src= "images/just-me-2.jpg" alt="Valerie's Picture" class="center resize">,</div>  <!--image-->
-     <div class="container">  
-     <h2>Hello, I am Valerie!</h2>  <!--h2-->
-     <h3 class="align-center">I am a software engineer in Houston, Texas.</h3> <!--h3-->
-     <p>Video games are what got me interested in software development!</p>
-     <p>Here are some of my favorite ones:</p></div> 
-     <div class="align-center container text-style">
-     <ul>                       <!--unordered list-->
-       <li>The Witcher 3</li>
-       <li>The Elder Scrolls: Skyrim</li>
-       <li>Cyberpunk: 2077</li>
-     </ul></div>
-     <p class="container">If you would like to contact me directly you can <a href="mailto:valeriengutierrez@yahoo.com">Email Me</a></p> <!--anchor-->
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; /*--margins--*/
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 5px;
+  border-top: 1px dotted rgb(230, 224, 224);
+  border-bottom: 3px dotted rgb(230, 224, 224);
+}
 
+p {
+  font-family: "Trebuchet MS";
+  text-align: left;
+  color: whitesmoke;
+}
 
-<br>
-<hr width=30%>  <!--<hr> made line shorter for styling purposes-->
-<br>
+.list-inside {
+  /*class to center lists*/
+  list-style-position: inside;
+}
 
-<div class="container container-two align-center text-style">
-     <h2>About Me</h2>        <!--about me-->
-     <p>I have always been interested in software design. In my very first visual basics class I designed several apps such dice rollers and random number generators. My favorite app was one that I got to design with a team and it was a Game of Thrones Dothraki name generator!</p> 
-     <p>When I am not coding, I like to particapate in community service with my non-profit. We help clean up local parks and host recreational activities for underpriviledged kids in our community.</p>
-     <p>I am so happy to have found <a href="https://www.thinkful.com/">Thinkful</a> and am excited to begin my journey as a software engineer!</p>  <!--link to thinkful.com-->
-     </div>   
+.align-center {
+  text-align: center;
+}
 
-<br>
-<hr width= auto;>
-<br>
+ul {
+  /*unordered list styling*/
+  display: inline-block;
+  text-align: left;
+}
 
-<div class="container align-center text-style">
-  <h2>Contact Me</h2>
-  <p>You can contact or follow me using the links below:</p>
-  <ol class="list-inside">          <!--ordered list-->
-  <li><a href ="https://github.com/Valerie-Gtrz">GitHub</a></li>
-  <li><a href="https://www.linkedin.com/in/valeriengutierrez/">LinkedIn</a></li>
-  </ol>
-  </div>
+ol {
+  /*ordered list styling*/
+  display: inline-block;
+  text-align: left;
+}
 
-  <article>   <!--article for map-->
-  <div class="mapouter center"><div class="gmap_canvas"><iframe width="404" height="288" id="gmap_canvas" src="https://maps.google.com/maps?q=Houston&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:288px;width:404px;}</style><a href="https://www.embedgooglemap.net">use google map on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:288px;width:404px;}</style></div></div>
-</article>
+.text-style {
+  /*class for text styling*/
+  font-family: "Trebuchet MS"; /*--font-family--*/
+  color: aliceblue; /*--color--*/
+}
 
-  <br>
+.center {
+  /*class to center image*/
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px; /*padding*/
+}
 
+.left {
+  text-align: left; /*text-align left*/
+}
 
-      </main>
+.container {
+  /*class to size containers*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-  <footer>  <!--footer-->
-        <br>
-        <p class="align-center text-style">&#169Valerie Gutierrez</p>
-  </footer>
+.flexbox-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
 
-    <script src="script.js"></script>
-  </body>
-</html>
+.flexbox-item {
+  width: 300px;
+  margin: 10px;
+  padding: 1em;
+}
+
+.flexbox-one {
+  text-align: left;
+  border: 5px dashed rgb(255, 0, 76);
+}
+
+.flexbox-two {
+  text-align: left;
+  border: 5px dashed rgb(52, 44, 173);
+}
+
+.flexbox-three {
+  text-align: left;
+  border: 5px dashed goldenrod;
+}
+
+footer {
+  /*footer styling*/
+  height: 80px; /*--height--*/
+  background-color: #084e59;
+  background-size: 100%;
+  font-size: 25px; /*--font-size--*/
+}
