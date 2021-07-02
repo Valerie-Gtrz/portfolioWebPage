@@ -14,7 +14,7 @@ body {
       #0f0a3c 67%,
       #0f0a3c 100%
     );
-  background-size: 100%;
+  background-size: cover;
   background-blend-mode: screen, overlay, hard-light, normal;
 }
 header {
@@ -22,7 +22,7 @@ header {
   font-size: 20px;
   background-image: url(images/gradient-header.png);
   padding: 10px; /*padding*/
-  background-size: 100%;
+  background-size: cover;
 }
 
 h1,
