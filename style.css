@@ -1,4 +1,6 @@
-
+html {
+  height: 100%;
+}
 body {
   
   background: 
@@ -17,8 +19,10 @@ body {
       #0f0a3c 100%
     );
   background-blend-mode: screen, overlay, hard-light, normal;
-  width: auto;
-  height: auto;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
