@@ -107,7 +107,8 @@ ol {
   text-align: left; /*text-align left*/
 }
 article {
-  width: 350px;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .flexbox-main {
