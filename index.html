@@ -1,161 +1,99 @@
-html {
-  height: 100%;
-}
-body {
-  
-  background: 
-    linear-gradient(45deg, #000850 0%, #000320 100%),
-    radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
-    linear-gradient(225deg, #ff7a00 0%, #000000 100%),
-    linear-gradient(
-      135deg,
-      #cdffeb 10%,
-      #cdffeb 35%,
-      #009f9d 35%,
-      #009f9d 60%,
-      #07456f 60%,
-      #07456f 67%,
-      #0f0a3c 67%,
-      #0f0a3c 100%
-    );
-  background-blend-mode: screen, overlay, hard-light, normal;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+<!DOCTYPE html>  <!--doctype-->
+<html>   <!--html-->
+  <head>       <!--head-->
+    <meta charset="utf-8"> <!--meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valerie Gutierrez</title>   <!--title of site-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" /> <!--noramlize-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+
+  <header class= "text-style">
+    <h1 style="font-size: 45px;">Valerie Gutierrez</h1>   <!--h1-->
+    <p style="font-size: 28px; position:relative; top:-10px;">Software Engineer</p>  <!--center align paragraph in header-->
+    </header>
+
+    <hr>
 
 
-header {
-  /*header background image*/
-  background-color: #0000;
-}
+  <body> <!--body-->
 
-h1,
-h2,
-h3 {
-  color: whitesmoke;
-}
+    <main>   <!--main-->
 
-a {
-  /*anchor styling*/
-  color: gold;
-}
-a:visited {
-  color: rgb(63, 230, 245);
-}
-a:hover {
-  color: rgb(0, 250, 0);
-}
+<br>
 
-img {
-  /*created a border for my image*/
-
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 5px;
-  display: block;
-}
-
-img.resize {
-  /*made image smaller*/
-  width: 300px;
-  height: 337px; /*--height--*/
-}
+     <article><img src= "images/just-me-2.jpg" alt="Valerie's Picture" class="center resize"></article>  <!--image-->
+     <div class= "text-style">  
+     <h2>Hi, I'm Valerie!</h2>  <!--h2-->
+     <h3>I am a software engineer in Houston, Texas.</h3> <!--h3-->
+     <p>Like many others, video games are</p> 
+     <p>what got me interested in software development!</p>
+     <p>My top three favorite games right now are:</p></div> 
+     <div class="flexbox-main text-style">
+      <ul>                       <!--ulist-->
+       <li>The Witcher 3</li>
+       <br>
+       <li>The Elder Scrolls: Skyrim</li>
+       <br>
+       <li>Cyberpunk: 2077</li>
+     </ul></div>
+     <p class="text-style" style = "position:relative;  top:40px; text-align: center;"> 
+      </p> <!--anchor-->
 
 
+ 
+<br>
 
-hr{
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(230, 222, 222, 0.75), rgba(0, 0, 0, 0));
-}
-
-
-p {
-font-size: 18px;
-  color: whitesmoke;
-}
-
-.list-inside {
-  /*class to center lists*/
-  list-style-position: inside;
-  
-}
-
-.align-center {
-  text-align: center;
-}
-
-ul {
-  text-align: left;
-  font-size: 18px;
-  list-style-position: inside;
-}
-
-ol {
-  /*ordered list styling*/
-  font-size: 18px;
-  list-style-position: inside;
-}
-
-.text-style {
-  /*class for text styling*/
-  font-family: 'Montserrat', sans-serif; /*--font-family--*/
-color: aliceblue;
-text-align: center;
-}
+<div>
+     <h2 class= "text-style">About Me</h2>        <!--about me-->
+     <div class= "flexbox-main">
+     <p class="flexbox-item flexbox-one text-style">
+     I have always been interested in software design. 
+     In my very first visual basics class I designed a 
+     few fun applications like dice rollers and random number generators. 
+     One of my favorites was a Game of Thrones Dothraki name generator!</p> 
+     <p class="flexbox-item flexbox-two text-style">When I am not coding, I like to 
+       particapate in community service with my non-profit. We help clean 
+       up local parks and host recreational activities for underpriviledged kids in our community.</p>
+     <ul class="flexbox-item flexbox-three text-style">Before I started coding, I worked in environmental sciences. 
+       Some of my previous positions include: 
+       <li style = "list-style-position: inside" >Geology lab assistant</li> <!--unordered list-->
+        <li style = "list-style-position: inside">Air quality specialist</li>
+        <li style = "list-style-position: inside">Geological lab tech</li></ul>  
+     </div>
+    </div>   
 
 
 
-.center {
-  /*class to center image*/
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding: 10px; /*padding*/
-}
+<div class="flexbox-main text-style">
+  <h2>Contact Me</h2>
+  <p>You can contact or follow me using the links below:</p>
+  <a href ="https://github.com/Valerie-Gtrz">GitHub</a>
+  <hr width= 100px;>
+  <a href="https://www.linkedin.com/in/valeriengutierrez/">LinkedIn</a>
+  <hr width= 100px;>
+  <a href="mailto:valeriengutierrez@yahoo.com">Email Me</a>
+  <hr width= 100px;>
+  </div>
 
-.left {
-  text-align: left; /*text-align left*/
-}
+  <article>   <!--article for map-->
+  <div class="mapouter center"><div class="gmap_canvas"><iframe width="404" height="288" id="gmap_canvas" src="https://maps.google.com/maps?q=Houston&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:288px;width:404px;}</style><a href="https://www.embedgooglemap.net">use google map on website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:288px;width:404px;}</style></div></div>
+</article>
+
+  <br>
 
 
+      </main>
 
-.flexbox-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  <footer>  <!--footer-->
+        <br>
+        <p class="align-center text-style">&#169Valerie Gutierrez</p>
+  </footer>
 
-.flexbox-item {
-  min-height: 100px;
-  width: 300px;
-  margin: 10px;
-  padding: 1em;
-}
-
-.flexbox-one {
-  text-align: left;
-  border: 5px dashed goldenrod;
-  
-}
-
-.flexbox-two {
-  text-align: left;
-  border: 5px dashed rgb(92, 230, 184);
-}
-
-.flexbox-three {
-  text-align: left;
-  border: 5px dashed rgb(255, 0, 76);
-}
-
-footer {
-  /*footer styling*/
-  
-  height: 80px; /*--height--*/
-  background-color: #0000;
-  font-size: 25px; /*--font-size--*/
-
-}
+    <script src="script.js"></script>
+  </body>
+</html>
