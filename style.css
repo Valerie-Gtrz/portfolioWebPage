@@ -1,3 +1,4 @@
+
 body {
   background: linear-gradient(45deg, #000850 0%, #000320 100%),
     radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
@@ -18,6 +19,7 @@ body {
 }
 header {
   /*header background image*/
+  font-size: 20px;
   background-image: url(images/gradient-header.png);
   padding: 10px; /*padding*/
   background-size: 100%;
@@ -26,14 +28,11 @@ header {
 h1,
 h2,
 h3 {
-  font-family: "Trebuchet MS";
-  text-align: center;
   color: whitesmoke;
 }
 
 a {
   /*anchor styling*/
-  font-family: "Trebuchet MS";
   color: gold;
 }
 a:visited {
@@ -58,23 +57,7 @@ img.resize {
   height: 337px; /*--height--*/
 }
 
-.filter {
-  position: relative;
-  -webkit-filter: contrast(120%) saturate(125%);
-  filter: contrast(120%) saturate(125%);
-}
-.filter::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  pointer-events: none;
-  mix-blend-mode: overlay;
-  background: rgba(127, 187, 227, 0.2);
-}
+
 
 hr {
   display: block;
@@ -89,14 +72,14 @@ hr {
 }
 
 p {
-  font-family: "Trebuchet MS";
-  text-align: left;
+font-size: 18px;
   color: whitesmoke;
 }
 
 .list-inside {
   /*class to center lists*/
   list-style-position: inside;
+  
 }
 
 .align-center {
@@ -104,22 +87,25 @@ p {
 }
 
 ul {
-  /*unordered list styling*/
-  display: inline-block;
   text-align: left;
+  font-size: 18px;
+  list-style-position: inside;
 }
 
 ol {
   /*ordered list styling*/
-  display: inline-block;
-  text-align: left;
+  font-size: 18px;
+  list-style-position: inside;
 }
 
 .text-style {
   /*class for text styling*/
-  font-family: "Trebuchet MS"; /*--font-family--*/
-  color: aliceblue; /*--color--*/
+  font-family: 'Montserrat', sans-serif; /*--font-family--*/
+color: aliceblue;
+text-align: center;
 }
+
+
 
 .center {
   /*class to center image*/
@@ -134,24 +120,16 @@ ol {
   text-align: left; /*text-align left*/
 }
 
-.container {
-  /*class to size containers*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-}
+
 
 .flexbox-main {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
 }
 
 .flexbox-item {
-  min-height: 200px;
+  min-height: 100px;
   width: 300px;
   margin: 10px;
   padding: 1em;
@@ -159,7 +137,8 @@ ol {
 
 .flexbox-one {
   text-align: left;
-  border: 5px dashed rgb(255, 0, 76);
+  border: 5px dashed goldenrod;
+  
 }
 
 .flexbox-two {
@@ -169,7 +148,7 @@ ol {
 
 .flexbox-three {
   text-align: left;
-  border: 5px dashed goldenrod;
+  border: 5px dashed rgb(255, 0, 76);
 }
 
 footer {
