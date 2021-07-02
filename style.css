@@ -86,7 +86,7 @@ ol {
   /*ordered list styling*/
   font-size: 18px;
   list-style-position: inside;
-  list-style-type: '';
+  list-style-type: none;
 }
 
 .text-style {
