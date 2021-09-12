@@ -67,7 +67,6 @@ p {
   color: whitesmoke;
 }
 
-
 .align-center {
   text-align: center;
 }
@@ -77,16 +76,20 @@ ul {
   font-size: 18px;
   list-style-type: none;
   list-style-position: inside;
-  margin-left: -20px; 
+  margin-left: -20px;
   margin-right: 10px;
 }
-
 
 ol {
   /*ordered list styling*/
   font-size: 18px;
   list-style-position: inside;
   list-style-type: none;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
 }
 
 .text-style {
@@ -100,7 +103,6 @@ ol {
   /*class to center image*/
   margin-left: auto;
   margin-right: auto;
- 
 }
 
 .left {
