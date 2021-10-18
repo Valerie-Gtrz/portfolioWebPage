@@ -14,5 +14,3 @@ Here is a direct link to the site: [Portfolio Web Page](https://valerie-gtrz.git
 ## Technology
 ### Languages
 - HTML, CSS, and Bootstrap
-
-
